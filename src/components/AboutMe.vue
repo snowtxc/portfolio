@@ -3,8 +3,10 @@
         import BaseBtn from "@/components/Base/BaseBtn.vue";
         
         import { SectionEnum } from "@/enums/SectionEnum";
-        import { defineEmits } from "vue";
+        import { defineEmits,onBeforeMount,ref } from "vue";
         import profileImg from "@/assets/perfil.jpeg";
+        import { db } from  "@/firebase.js";
+         import { getDocs, collection } from "@firebase/firestore";
 
         const emit = defineEmits(['onScrollToSection']);
 
@@ -12,17 +14,22 @@
             emit('onScrollToSection', section);
         }
 
+        onBeforeMount(()=>{
+            const colSkills= collection(db, "skills");
+            getDocs(colSkills).then((snaps) => {
+                skills.value = snaps.docs.reverse().map(item => {
+                    return {
+                        id: item.id,
+                        ...item.data()
+                    };
+                });
+            });
+        })
 
-        const skills  = [
-            "Vue JS",
-            "PHP",
-            "Laravel",
-            "Codeigniter",
-            "C# .NET",
-            "Angular",
-            "SQL",
-            "Git"
-        ];
+
+        const skills  = ref([
+            
+        ]);
 </script>
 
 <template>
@@ -45,7 +52,7 @@
             <div class="mt-8 md:mt-0 flex-1 x:mt-20 md:mt-0">
                 <h1 class="text-xl md:text-2xl font-bold">Mis Habilidades</h1>
                 <div class="flex flex-wrap mt-5 gap-5">
-                    <BadgeSkill v-for="(skill, idx) in skills" :key="idx" :text="skill"></BadgeSkill>
+                    <BadgeSkill v-for="skill in skills" :key="skill.id" :text="skill.name"></BadgeSkill>
                 </div>
             </div>
         </div>
