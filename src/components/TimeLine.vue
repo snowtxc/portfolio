@@ -98,7 +98,7 @@
   }
   ul.timeline:before {
     content: " ";
-    background: #fff;
+    background: #495a80;
     display: inline-block;
     position: absolute;
     left: 29px;

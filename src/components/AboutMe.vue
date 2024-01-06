@@ -38,9 +38,7 @@
             <div class="flex-1">
                 <h1 class="text-xl md:text-2xl font-bold">¡Conóceme!</h1>
                 <p class="text-base md:text-xl mt-8 text-secondary">
-                    Soy un Desarrollador Web Frontend que construye el frontend de sitios web y aplicaciones web que conducen al éxito del producto en general. Echa un vistazo a algunos de mis trabajos en la sección de Proyectos.
-                    También me gusta compartir contenido relacionado con las cosas que he aprendido a lo largo de los años en Desarrollo Web, para ayudar a otras personas de la comunidad de desarrollo. Siéntete libre de conectarte o seguirme en mi Linkedin, donde publico contenido útil relacionado con el Desarrollo Web y la Programación.
-                    Estoy abierto a oportunidades laborales en las que pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme.
+                    Hola, soy Rodrigo Castro. Me encanta sumergirme en el fascinante mundo del desarrollo de software y enfrentar nuevos retos y desafíos que ponga a prueba mi capacidad de resolucion de problemas. Tengo un amplio interes por el desarrollo back-end , inteligencia artificial y blockhain.
                 </p>
                 <BaseBtn text="CONTACTO" @click="scrollToSection(SectionEnum.CONTACT)"></BaseBtn>
             </div>

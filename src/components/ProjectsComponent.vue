@@ -1,10 +1,14 @@
 <script setup>
     import { ref, onBeforeMount } from "vue";
+    import { useRouter } from "vue-router";
     import BaseBtn from "@/components/Base/BaseBtn.vue";
     import { db } from  "@/firebase.js";
     import { getDocs, collection } from "@firebase/firestore";
+    import homeFondo from "@/assets/home-fondo.jpg";
+
 
     const projects = ref([]);
+    const $router = useRouter();
 
     onBeforeMount(() => {
         const colProjects = collection(db, "projects");
@@ -17,6 +21,11 @@
             });
         });
     });
+
+
+    const goToProjectDetail = ({id})=>{
+        $router.push({name: 'ProjectDetail', query: { id}})
+    }
 </script>
 
 <template>
@@ -35,7 +44,7 @@
                     <h1 class="text-2xl md:text-3xl font-bold tracking-wider">{{ project.title }}</h1>
                     <p class="mt-5 text-secondary">{{ project.description }}</p>
                     <div class="flex justify-center md:justify-start">
-                        <BaseBtn text="ESTUDIO DE CASO"></BaseBtn>
+                        <BaseBtn text="CASO DE ESTUDIO" @click="goToProjectDetail(project)"></BaseBtn>
                     </div>
                 </div>
             </div>

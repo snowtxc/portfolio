@@ -17,7 +17,7 @@
 </script>
 
 <template>
-   <div class="w-full py-32" :style="{ 'background-image': 'url(' + homeFondo + ')' }">
+   <div class="w-full py-32 bg-[#f9f9f9] border-t-2 border-primary" >
     <div class="flex flex-col items-center w-full">
         <h1 class="text-3xl md:text-4xl font-bold tracking-wider">EXPERIENCIAS</h1>
         <span class="w-10 p-1 bg-primary mt-5 border rounded-lg border-none"></span>

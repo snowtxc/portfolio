@@ -2,13 +2,18 @@
     import homeFondo from "@/assets/home-fondo.jpg";
     import SocialBar from "@/components/SocialBar.vue";
     import { SectionEnum } from "@/enums/SectionEnum";
-    import { defineEmits } from "vue";
+    import { defineEmits  } from "vue";
+    
 
     const emit = defineEmits(['onScrollToSection']);
 
     const scrollToSection = (section)=>{
         emit('onScrollToSection', section);
     }
+
+   
+
+
 </script>
 
 <template>

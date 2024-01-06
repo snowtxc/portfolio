@@ -1,10 +1,9 @@
 <script setup>
         const githubUrl = "https://github.com/snowtxc";
         const linkedinUrl = "https://www.linkedin.com/in/rodrigo-castro-60b68a207/";
-
+        const cv  = "https://firebasestorage.googleapis.com/v0/b/portfolio-personal-47e3e.appspot.com/o/CV%20(3).pdf?alt=media&token=b5f26c1e-2933-4438-b6ce-25f153fa5aaa";
         const openTab = (url)=>{
             window.open(url,'_blank');
-
         }
 </script>
 
@@ -15,6 +14,10 @@
         </div>
         <div class="rounded-lg hover:bg-primary p-2 px-4 hover:bg-opacity-25 hover:cursor-pointer transition duration-200" @click="openTab(githubUrl)">
             <i class="fa-brands fa-github text-3xl hover:cursor-pointer"></i> 
+        </div>
+
+        <div class="rounded-lg hover:bg-primary p-2 px-4 hover:bg-opacity-25 hover:cursor-pointer transition duration-200" @click="openTab(cv)">
+            <i class="fa-regular fa-file"></i> 
         </div>
     </div>
 
