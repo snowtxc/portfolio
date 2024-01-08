@@ -37,7 +37,7 @@ const openTab = (url)=>{
         @click="onToggle"
         data-collapse-toggle="navbar-default"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg 2xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
       >
@@ -58,9 +58,9 @@ const openTab = (url)=>{
           />
         </svg>
       </button>
-      <div class="hidden w-full xl:block xl:w-auto" id="navbar-default">
+      <div class="hidden w-full 2xl:block 2xl:w-auto" id="navbar-default">
         <ul
-          class="border-0 font-medium w-full gap-2 md:gap-0 flex gap-5 flex-col p-4 xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 xl:flex-row xl:space-x-20 rtl:space-x-reverse xl:mt-0 xl:border-0 xl:bg-white dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700"
+          class="border-0 font-medium w-full gap-2 md:gap-0 flex gap-5 flex-col p-4 2xl:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 2xl:flex-row xl:space-x-20 rtl:space-x-reverse 2xl:mt-0 xl:border-0 2xl:bg-white dark:bg-gray-800 2xl:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <a

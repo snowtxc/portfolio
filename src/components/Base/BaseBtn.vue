@@ -12,7 +12,7 @@
 
 <template>
   <button
-    class="w-full md:w-0 mt-16 py-3 min-w-[200px] text-xl rounded-md"
+    class="w-full md:w-0 mt-16 py-3 min-w-[200px] text-xl rounded-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-secondary"
     :class="[
       'bg-primary',
       props.bgColor,

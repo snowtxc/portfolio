@@ -44,8 +44,8 @@
 </script>
 
 <template>
-  <HomeComponent :id="SectionEnum.HOME"  @onScrollToSection="onScrollToSection"></HomeComponent>
-  <AboutMe :id="SectionEnum.ABOUT" @onScrollToSection="onScrollToSection"></AboutMe> 
+  <HomeComponent :id="SectionEnum.HOME"  @onScrollToSection="redirectToSection"></HomeComponent>
+  <AboutMe :id="SectionEnum.ABOUT" @onScrollToSection="redirectToSection"></AboutMe> 
   <ExperiencesComponent :id="SectionEnum.EXPERIENCES"></ExperiencesComponent>
   <EducationComponent :id="SectionEnum.EDUCATION"></EducationComponent>
   <ProjectsComponent :id="SectionEnum.PROJECTS"></ProjectsComponent>

@@ -54,6 +54,11 @@ onBeforeMount(() => {
 })
 
 
+const goToRepo = ({linkRepo})=>{
+    window.open(linkRepo,'_blank');
+}
+
+
 </script>
 
 <template>
@@ -106,7 +111,7 @@ onBeforeMount(() => {
         <div class="mt-10">
           <h1 class="text-2xl md:text-3xl font-bold tracking-wider">Ir al repositorio</h1>
           <div class="flex gap-10" v-if="!projectData.repositorioPrivado">
-            <BaseBtn text="REPOSITORIO"></BaseBtn>
+            <BaseBtn text="REPOSITORIO" @click="goToRepo(projectData)"></BaseBtn>
             <BaseBtn text="VOLVER AL INICIO"  bgColor="bg-white" textColor="black" borderColor="border-black"></BaseBtn>
           </div>
           <p v-else>

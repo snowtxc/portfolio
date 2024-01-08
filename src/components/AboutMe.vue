@@ -21,7 +21,7 @@
                     return {
                         id: item.id,
                         ...item.data()
-                    };
+                    }; 
                 });
             });
         })
