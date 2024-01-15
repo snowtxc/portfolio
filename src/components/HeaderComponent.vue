@@ -7,7 +7,7 @@ import BaseBtn from "@/components/Base/BaseBtn.vue";
 
 const $appStore = appStore();
 const emit = defineEmits(['onScrollToSection'])
-const cv  = "https://firebasestorage.googleapis.com/v0/b/portfolio-personal-47e3e.appspot.com/o/CV%20(3).pdf?alt=media&token=b5f26c1e-2933-4438-b6ce-25f153fa5aaa";
+const cv  = "https://firebasestorage.googleapis.com/v0/b/portfolio-personal-47e3e.appspot.com/o/Curriculum%20Profesional%20de%20Hombre%20con%20Foto%20Sencillo%20Azul.pdf?alt=media&token=8e1749f6-6b38-4970-bf04-d2e5f8d0e321";
 
 const onToggle = () => {
   document.getElementById('navbar-default').classList.toggle('hidden')
